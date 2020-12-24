@@ -1,0 +1,2314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-12-24 周四 17:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>马克思主义原理</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="LanderX" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="D:\CS\src\github.css">
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">马克思主义原理</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org5aca0f5">1. 导论: 马克思主义: 一源万派</a>
+<ul>
+<li><a href="#org6657e25">1.1. 一源: 马克思</a>
+<ul>
+<li><a href="#orgdad12db">1.1.1. 年龄分段</a></li>
+<li><a href="#orgab346b1">1.1.2. 马克思和恩格斯: 马恩差异论</a></li>
+</ul>
+</li>
+<li><a href="#orgf0bf6ba">1.2. 万派</a>
+<ul>
+<li><a href="#orgc413274">1.2.1. 第二国际</a></li>
+<li><a href="#org99ce278">1.2.2. 列宁: 第三国际</a></li>
+<li><a href="#org2c23535">1.2.3. 西方马克思主义</a></li>
+<li><a href="#orga1a9696">1.2.4. 著作</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga9c26b3">2. 第二讲 重拾辩证法的革命内核</a>
+<ul>
+<li><a href="#org8f4daae">2.1. 日常生活中的"辩证"</a></li>
+<li><a href="#orgd72ab5f">2.2. 一. 矛盾的辩证法</a>
+<ul>
+<li><a href="#org83e4fc1">2.2.1. 1. 词源: dialectic &lt;- dialogue</a></li>
+<li><a href="#org1fe6417">2.2.2. 2. 康德</a></li>
+<li><a href="#org61e9f64">2.2.3. 3. 黑格尔 矛盾辩证法</a></li>
+</ul>
+</li>
+<li><a href="#org92d42ec">2.3. 二. 革命辩证法</a>
+<ul>
+<li><a href="#orgda59e8d">2.3.1. 黑格尔的辩证法中包含革命部分(马克思说)</a></li>
+<li><a href="#orgb5074fe">2.3.2. 马克思(恩格斯)的辩证法: 批判的革命的辩证法</a></li>
+<li><a href="#orgf7f6d9d">2.3.3. 毛泽东的革命辩证法</a></li>
+<li><a href="#org0581274">2.3.4. 教科书体系的辩证法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org0478c5b">3. 第三讲 政治经济学批判</a>
+<ul>
+<li><a href="#org031a8ae">3.1. 批判的逻辑</a>
+<ul>
+<li><a href="#org1bf9964">3.1.1. 何谓批判(kritik)</a></li>
+<li><a href="#org2ce61ec">3.1.2. 何谓政治经济学批判</a></li>
+</ul>
+</li>
+<li><a href="#org1133db0">3.2. 异化劳动理论</a>
+<ul>
+<li><a href="#org324ad99">3.2.1. 何谓异化</a></li>
+<li><a href="#org74343ad">3.2.2. 何谓异化劳动</a></li>
+<li><a href="#orgfd1e392">3.2.3. 扬弃异化</a></li>
+</ul>
+</li>
+<li><a href="#org07565d6">3.3. 剩余价值学说</a>
+<ul>
+<li><a href="#org335c120">3.3.1. 资本的流通</a></li>
+<li><a href="#org3dfa60e">3.3.2. 资本增殖公式</a></li>
+<li><a href="#orgefc5fe9">3.3.3. 剩余价值率 m'</a></li>
+<li><a href="#orgf7a0c67">3.3.4. 资本的利润率 p'</a></li>
+<li><a href="#orgb261868">3.3.5. 资本家劳动吗?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org40af214">4. 第四讲 共产主义的三重维度</a>
+<ul>
+<li><a href="#org2f2aa50">4.1. 作为现实运动的共产主义</a>
+<ul>
+<li><a href="#orgf02eaa5">4.1.1. 是什么?不是理想, 是消灭现存状况的现实的运动</a></li>
+<li><a href="#org52d2773">4.1.2. 何以是? 共产主义的理论依据</a></li>
+<li><a href="#org80353aa">4.1.3. 何以是? 现实考量, 现实依据</a></li>
+</ul>
+</li>
+<li><a href="#org79032b4">4.2. 作为社会形态的共产主义</a>
+<ul>
+<li><a href="#org02fd5d9">4.2.1. 社会形态阶段论</a></li>
+<li><a href="#orga5d2391">4.2.2. 共产主义社会的具体阶段</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org025c5a4">5. 第五讲 马克思主义的国家, 宗教, 婚姻家庭理论</a>
+<ul>
+<li><a href="#orgb027e50">5.1. 国家观</a>
+<ul>
+<li><a href="#org0a8c100">5.1.1. 所谓国家</a></li>
+<li><a href="#org971eaed">5.1.2. 国家的本质 (国家和阶级的关系)</a></li>
+<li><a href="#org3f2ed54">5.1.3. 无产阶级专政</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5aca0f5" class="outline-2">
+<h2 id="org5aca0f5"><span class="section-number-2">1</span> 导论: 马克思主义: 一源万派</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>学习的基本原则: 追本溯源</li>
+</ul>
+</div>
+
+<div id="outline-container-org6657e25" class="outline-3">
+<h3 id="org6657e25"><span class="section-number-3">1.1</span> 一源: 马克思</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgdad12db" class="outline-4">
+<h4 id="orgdad12db"><span class="section-number-4">1.1.1</span> 年龄分段</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+不同时期观点不一样, 不要混淆
+</p>
+
+<ul class="org-ul">
+<li>1818 - 1845 青年时期 
+<ul class="org-ul">
+<li>公知, 反对专制</li>
+<li>不强调科学必然, 抽象的人道主义</li>
+<li>西方中心论</li>
+</ul></li>
+<li>1845 - 1871 成熟时期
+<ul class="org-ul">
+<li><b>1845: 《德意志形态》, 《关于费尔巴哈的提纲》</b></li>
+<li>强调科学必然规律 (毛:"历史规律不可抗拒, 美帝国主义必然灭亡")</li>
+<li>同样具有人道主义, 科学的人道主义</li>
+<li>受环境影响, 对东方仍具有偏见, 称古代中国"木乃伊"(朝代更替循环, 死而不衰), "活化石", "野蛮人", "半野蛮人"</li>
+<li>关注中国, 包括近代的革命</li>
+<li>东方社会也要经历西方的道路</li>
+</ul></li>
+<li>1871 - 1883 晚年
+<ul class="org-ul">
+<li><b>1871: 法兰西内战和巴黎公社</b></li>
+<li>东方社会具备意志性, 有可能不经过资本主义的卡夫丁峡谷, 直接进入社会主义</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgab346b1" class="outline-4">
+<h4 id="orgab346b1"><span class="section-number-4">1.1.2</span> 马克思和恩格斯: 马恩差异论</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<ul class="org-ul">
+<li>哲学理论有些理解不同</li>
+<li>立场并不对立</li>
+<li>还存在对立论, 一致论</li>
+<li>梅林: 马克思首先是一名斗士, 在有斗争的机会时, 马克思会参与斗争</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf0bf6ba" class="outline-3">
+<h3 id="orgf0bf6ba"><span class="section-number-3">1.2</span> 万派</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgc413274" class="outline-4">
+<h4 id="orgc413274"><span class="section-number-4">1.2.1</span> 第二国际</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li>第一国际的影子: 国际歌, 巴黎公社, 鲍迪埃. 共产党会议的ED</li>
+<li>1889, 社会民主工人建立第二国际, 恩格斯领导, 调和各党派</li>
+<li>恩格斯去世后, 第二国际分化斗争
+<ul class="org-ul">
+<li>二战背景下, 国际主义和民族主义的斗争
+<ul class="org-ul">
+<li>左派(革命派): 坚持马克思国际主义, 考虑战争是正义的吗? 开战者为了利益胁迫了整个民族. 不参与战争, 共同保卫和平.</li>
+<li>右派: 民族主义, 为本国而战. 大部分政党滑向了民族主义, 支持"防御性战争"</li>
+</ul></li>
+<li>革命主义和改良主义的斗争
+<ul class="org-ul">
+<li>左派: 马克思: 暴力革命方式消灭资产阶级
+<ul class="org-ul">
+<li>列宁: 让自己的祖国在战争中失败, 转国际战争为国内战争, 战争引发革命(毛: 二十世纪的主题是战争与革命)</li>
+</ul></li>
+<li>右派: 改良(修正)主义: 议会方式获取社会主导权</li>
+<li>中派: 考斯基, "共产党人的教皇", 调和左右派, 维持第二国际形式的团结. 
+<ul class="org-ul">
+<li>战争开始后导向右派</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>第二国际演化为现代欧洲**民主社会主义**
+<ul class="org-ul">
+<li><b>不要消灭私有制</b>, 搞国家调控干预, 福利制度, 减小贫富差距 -&gt; 社会主义特点</li>
+<li>瑞典等北欧国家</li>
+<li><b>指导思想多元化</b>, 以马克思主义, 西方人道主义, 近代启蒙思想等均为指导思想</li>
+<li><b>不采取暴力革命</b>, 采取**议会斗争**</li>
+<li>区分民主社会党, 社会党, 民主党, 工人党, 共产党
+<ul class="org-ul">
+<li>法国共产党 -&gt; 社会民主党</li>
+<li>日本共产党 -&gt; 社会民主党</li>
+<li><b>叫不叫共产党和是不是共产党无关</b></li>
+</ul></li>
+<li>建立社会党国际</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org99ce278" class="outline-4">
+<h4 id="org99ce278"><span class="section-number-4">1.2.2</span> 列宁: 第三国际</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<ul class="org-ul">
+<li>第二国际纷纷倾向右派, 列宁认为第二国际破产, 建立第三国际继承马克思思想</li>
+<li>进入第三国际尽量更名共产党</li>
+<li><b>正统的马克思主义</b>: 中国共产党在其中</li>
+<li>列宁去世后, 第三国际在苏联内分化
+<ul class="org-ul">
+<li>斯大林 -&gt; 胜出</li>
+<li>托洛茨基
+<ul class="org-ul">
+<li>两人对立: 一国不能建成社会主义
+(马克思: 全世界爆发革命, 才可能进入共产主义, 俄国可能率先爆发, 但是俄国的革命只有引发西欧革命并互为补充, 才有可能胜利)
+列宁对此一直很犹豫</li>
+<li>被斯大林驱逐出境暗杀</li>
+</ul></li>
+<li>布哈林
+<ul class="org-ul">
+<li>两人对立: 长期利用新经济政策
+列宁: 新经济政策, 一定范围允许私有, 但不知应持续多久</li>
+<li>被审判枪决</li>
+<li>戈尔巴乔夫为之平反</li>
+</ul></li>
+</ul></li>
+<li>马克思主义出口各国
+<ul class="org-ul">
+<li>中国: 斯大林-&gt;毛-&gt;中国特色</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2c23535" class="outline-4">
+<h4 id="org2c23535"><span class="section-number-4">1.2.3</span> 西方马克思主义</h4>
+<div class="outline-text-4" id="text-1-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgb50f832"></a>创始人<br />
+<div class="outline-text-5" id="text-1-2-3-1">
+<ul class="org-ul">
+<li><b>卢卡奇</b> 匈牙利 《历史与阶级意识》</li>
+<li><b>科尔施</b> 德国 提出了西方马克思主义概念
+<ul class="org-ul">
+<li>晚年关注中国, "马克思主义将在中国复兴"</li>
+<li>马克思主义与哲学, 首先提出西马</li>
+</ul></li>
+<li><b>葛兰西</b> 意大利
+<ul class="org-ul">
+<li>《狱中札记》</li>
+</ul></li>
+</ul>
+</div>
+</li>
+
+<li><a id="org11a280d"></a>其他<br />
+<div class="outline-text-5" id="text-1-2-3-2">
+<ul class="org-ul">
+<li>萨特 存在主义 + 马克思主义</li>
+<li>波伏娃 女权主义 + 马克思主义</li>
+<li>弗洛伊德 精神分析学嵌入马克思主义</li>
+<li>阿尔堵塞 结构主义</li>
+<li>生态马克思主义 帝国主义无序扩张导致生态危机</li>
+<li>基督教 解放神学</li>
+<li><b><b>法兰克福学派</b></b> 最重要的学派 德国人为主
+<ul class="org-ul">
+<li>第一代 
+<ul class="org-ul">
+<li>霍克还莫(启蒙辩证法)</li>
+<li>阿朵诺(否定辩证法)</li>
+<li>马尔库赛(<i>单向度的人</i>, 对发达资本主义批判)</li>
+</ul></li>
+<li>第二代 哈被马思</li>
+<li>第三代 或奈特</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orga1a9696" class="outline-4">
+<h4 id="orga1a9696"><span class="section-number-4">1.2.4</span> 著作</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<blockquote>
+<p>
+浩如烟海
+</p>
+</blockquote>
+
+<ul class="org-ul">
+<li>1843年, 莱茵报发文 <i>黑格尔法哲学批判导言</i>, <i>论犹太人问题</i>
+<ul class="org-ul">
+<li><b>列宁</b> 认为马克思从唯心主义转向唯物主义, 从革命民主主义转为共产主义</li>
+<li>1930年才纠正为马克思在1845年思想成熟</li>
+</ul></li>
+<li>1844年 <i>经济学哲学手稿</i> (44手稿), 生前未发布
+<ul class="org-ul">
+<li>直至1930年才被发现, 学者才发现 <b>马克思早年与晚年</b> 的差别</li>
+<li>同年, <i>神圣家族-对批判的批判所作的批判</i> (<b>合著</b>)
+<ul class="org-ul">
+<li>列宁: "三分之二是冗长无聊的文字"
+<ul class="org-ul">
+<li>普鲁士不审查过长的书本, 百姓不去读</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>1845年 <i>[费尔巴哈的]提纲</i>, <i>[德意志意识]形态</i> (<b>合著</b>), <b>成熟代表作</b>, <b>历史唯物主义诞生</b>
+<ul class="org-ul">
+<li>阿尔都塞:"马克思的人生有一次断裂, 提纲是划过夜空的闪电"</li>
+</ul></li>
+<li>1847年 <i>哲学的贫困</i> 第一部法语
+<ul class="org-ul">
+<li>批判 <i>贫困的哲学</i></li>
+</ul></li>
+<li>1848年 <i>[共产党]宣言</i> <b>第三部合著</b>, 共三部</li>
+<li>1849年 <i>雇佣劳动与资本</i> (<b>经济</b>)</li>
+<li>1852年 <i>路易波拿巴的雾月十八日</i> (<b>政治</b>)</li>
+<li>1859年 <i>政治经济批判(一)</i> (仅一册)</li>
+<li>1867年 <i>资本论-政治经济批判(一)</i> (本人仅出版一卷)</li>
+<li>1871年 <i>[法兰西]内战</i> (讲巴黎公社) 
+<ul class="org-ul">
+<li><b>走入老年</b></li>
+</ul></li>
+<li>1875年 <i>哥达纲领批判</i></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc4d7ac4"></a>手稿存于<br />
+<div class="outline-text-5" id="text-1-2-4-1">
+<ul class="org-ul">
+<li>德国马琳基金会</li>
+<li></li>
+</ul>
+<p>
+全手稿: 2031年MEGA<sup>2</sup>
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orga9c26b3" class="outline-2">
+<h2 id="orga9c26b3"><span class="section-number-2">2</span> 第二讲 重拾辩证法的革命内核</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org8f4daae" class="outline-3">
+<h3 id="org8f4daae"><span class="section-number-3">2.1</span> 日常生活中的"辩证"</h3>
+<div class="outline-text-3" id="text-2-1">
+<blockquote>
+<p>
+"凡事都有两面性"
+</p>
+</blockquote>
+<p>
+乡愿哲学
+</p>
+<ul class="org-ul">
+<li>静态的把事物分为两面</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd72ab5f" class="outline-3">
+<h3 id="orgd72ab5f"><span class="section-number-3">2.2</span> 一. 矛盾的辩证法</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org83e4fc1" class="outline-4">
+<h4 id="org83e4fc1"><span class="section-number-4">2.2.1</span> 1. 词源: dialectic &lt;- dialogue</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>对话, 辩论, 雄辩</li>
+<li>古希腊哲学家发现万物都可以一正一反判断</li>
+<li>一正一反两面的 <b>矛盾</b></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1fe6417" class="outline-4">
+<h4 id="org1fe6417"><span class="section-number-4">2.2.2</span> 2. 康德</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<blockquote>
+<p>
+康德每句话很清楚明确容易懂, 但整体不知道在说什么
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>称"自相对立的两个命题同时存在"的现象为二律背反</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org4bc23cf"></a>康德证明了四组二律背反<br />
+<div class="outline-text-5" id="text-2-2-2-1">
+<ol class="org-ol">
+<li>世界是无限的/有限的
+<ul class="org-ul">
+<li>正反观点都是错的</li>
+</ul></li>
+<li>世界是可分的/不可分
+<ul class="org-ul">
+<li>正反观点都是错的</li>
+</ul></li>
+<li>人在世界上是自由的/是必然的结果(因果律)
+<ul class="org-ul">
+<li>存在于理念世界/现实世界</li>
+</ul></li>
+<li>历史有绝对的起点终点/历史是无穷的, 不存在始终
+<ul class="org-ul">
+<li>存在于现实世界/理念世界</li>
+</ul></li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org61e9f64" class="outline-4">
+<h4 id="org61e9f64"><span class="section-number-4">2.2.3</span> 3. 黑格尔 矛盾辩证法</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<blockquote>
+<p>
+黑格尔每一句话都很晦涩, 但结构性很强, 整体能读懂
+</p>
+</blockquote>
+</div>
+<ol class="org-ol">
+<li><a id="orgdefbd9b"></a>黑格尔定义辩证法<br />
+<div class="outline-text-5" id="text-2-2-3-1">
+<p>
+一个存在物, 要扬弃自身(变为反面), 走向它的对立面(形成一个新的存在物), 
+再扬弃自身&#x2026;, 但否定之否定不是肯定本身, 而是螺旋升天
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgcb4188a"></a>"扬弃": Aufhebung<br />
+<div class="outline-text-6" id="text-2-2-3-1-1">
+<ul class="org-ul">
+<li>废除</li>
+<li>举起, 提高</li>
+<li>保留, 保存</li>
+<li>在德语中, 三个意思是完全独立, 依语境调用的</li>
+</ul>
+
+<blockquote>
+<p>
+百度百科: <br />
+对原有事物既要抛弃其消极因素, 又要保留, 发扬其积极因素
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Max-<i>共产党宣言</i>: 
+共产党人可以把自己的理论概括为一句话: 消灭(Aufhebung)私有制
+</p>
+</blockquote>
+
+<p>
+马克思解释说
+</p>
+<ul class="org-ul">
+<li>一方面, 任何革命都会废除一定的财产, "不是共产主义革命的专利"</li>
+<li>不是废除一般意义上的财产, 而是废除资产阶级生产资料这一级的财产, 使生产压迫不再存在</li>
+</ul>
+
+<p>
+但是黑格尔此处是哲学的用法
+</p>
+<ul class="org-ul">
+<li>废除自身到达对立面的时候, 我们在对立面也能看到自身作为衬托而存在</li>
+<li>没有原先学渣, 就没有如今学霸</li>
+<li>"正如Aufhebung, 废除的同时, 也保留着旧东西"</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org92d42ec" class="outline-3">
+<h3 id="org92d42ec"><span class="section-number-3">2.3</span> 二. 革命辩证法</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-orgda59e8d" class="outline-4">
+<h4 id="orgda59e8d"><span class="section-number-4">2.3.1</span> 黑格尔的辩证法中包含革命部分(马克思说)</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ul class="org-ul">
+<li>扬弃后扬弃后扬弃, 旧的时代不断消逝, 新的历史不断创生, 这反映了历史进步的原则</li>
+<li>发展到范围的极限, 成为一种新的存在
+<ul class="org-ul">
+<li>如自由资本主义发展到垄断资本主义到帝国主义, 到达极限, 而发展为共产主义</li>
+</ul></li>
+<li>黑格尔第一次将历史视作不断发展不断进步的过程</li>
+<li>黑格尔是比较隐晦的表达, 避风头, 小心谨慎</li>
+<li>黑格尔的矛盾/革命辩证法是同一个东西</li>
+<li><p>
+黑格尔说历史需要从中国说起
+</p>
+<ul class="org-ul">
+<li>中国是一个实体, 不需要依托而存在, 成为其它存在的依托</li>
+<li>中国是最古老的国家亦是最新的国家</li>
+</ul>
+<blockquote>
+<p>
+马克思: 中国是木乃伊
+</p>
+</blockquote></li>
+<li>黑格尔说世界由东向西发展 
+<ul class="org-ul">
+<li>现代日尔曼(理想的君主立宪, 兼具普遍自由和个体自由, 是世界最高峰, 代表欧洲)
+&lt;-古罗马(普遍自由而压制个体自由)
+&lt;-古希腊(个体自由)
+&lt;-古中国(仅君主自由)</li>
+<li>于是有人说黑格尔奴颜婢膝, 历史终结论者</li>
+<li>而历史会继续向前
+<ul class="org-ul">
+<li>"当欧罗巴(Europe)成为历史杂物库的时候, 亚美利加(America)将成为新的明日之国,
+世界历史的新的中心, 到那里, 世界历史将继续新的使命"</li>
+</ul></li>
+<li>为什么是按照空间按照地域尺度?</li>
+<li>为什么以自由为量度?
+<ul class="org-ul">
+<li>黑格尔仍是唯心主义, 理念主义</li>
+</ul></li>
+<li>为什么不去写美国?
+<ul class="org-ul">
+<li>"历史哲学是已经发生的事情, 亚美利加是明日之国"</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb5074fe" class="outline-4">
+<h4 id="orgb5074fe"><span class="section-number-4">2.3.2</span> 马克思(恩格斯)的辩证法: 批判的革命的辩证法</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<blockquote>
+<p>
+辩证法, 在其合理形态上, 引起资产阶级及其空论主义的代言人的恼怒和恐怖, 
+因为辩证法在对现存事物的肯定的理解中同时包含对现存事物的否定的理解, 即对现存事物的必然灭亡的理解;
+辩证法对每一种既成的形式都是从不断的运动中, 因而也是从它的暂时性方面去理解;
+辩证法不崇拜任何东西, 按其本质来说, 它是批判的和革命的
+</p>
+</blockquote>
+</div>
+<ol class="org-ol">
+<li><a id="org69c40a5"></a>对历史是以展开的视角看<br />
+<div class="outline-text-5" id="text-2-3-2-1">
+<ul class="org-ul">
+<li>如, 资本主义, 打破了封建主义, 发展了世界, 是革命性的
+但在资本主义发展的过程中, 它压迫劳动力, 它必然灭亡, 扬弃自身, 被一个新的环节取代</li>
+<li>如, 宗教, 有一定的地位, 有一定的意义
+但在发展的过程中, 它将扬弃自身, 被一个新的历史环节取代</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf17931a"></a>恩格斯对辩证法的理解<br />
+<div class="outline-text-5" id="text-2-3-2-2">
+<p>
+恩格斯解释黑格尔一句话
+"凡是合乎理性的东西都是现实的, 凡是现实的东西都是合乎理性的"
+</p>
+<ul class="org-ul">
+<li>"存在即合理" 是错误的表述</li>
+<li>这句话中仍包含革命性
+<ul class="org-ul">
+<li>现实(wirklich)不是现存, 现实是在历史展开过程中体现为必然性的东西, 现存是当前存在</li>
+<li><b>在未来</b>, 合理的东西在未来将体现为必然性, 而实现的东西一定得是合理的
+反之, <b>在未来</b>, 不合理的东西一定会消失, 合理的东西, 在未来展开过程中将体现为必然性</li>
+</ul></li>
+<li>恩格斯说黑格尔是无意识说出来的, 没意识到此话的革命性</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org4897b58"></a>追问一句: 什么是合理?<br />
+<div class="outline-text-6" id="text-2-3-2-2-1">
+<ul class="org-ul">
+<li>暴露出黑格尔辩证法唯心主义的一面: 合乎绝对精神(自由精神)的就是合理的</li>
+<li>有生有灭, 循环迭代的是现实世界, 绝对精神是不会迭代的</li>
+<li>马克思, 恩格斯, 毛泽东则 <b>超越</b> 这一点
+<ul class="org-ul">
+<li>一切事物都是有生有灭的, 都接受辩证法的审判</li>
+<li>不"乞灵"于形而上的世界</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org5b4996a"></a>恩格斯说我们能推出一个新的命题<br />
+<div class="outline-text-6" id="text-2-3-2-2-2">
+<p>
+<b>凡是现存的就一定要灭亡</b>
+现存的东西, 在日后将丧失自己的现实性, 进而灭亡
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgc73c6f5"></a>老子: 祸兮, 福之所倚, 福兮, 祸之所伏<br /></li>
+<li><a id="org375d636"></a>佛教: 诸行无常<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgf7f6d9d" class="outline-4">
+<h4 id="orgf7f6d9d"><span class="section-number-4">2.3.3</span> 毛泽东的革命辩证法</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<blockquote>
+<p>
+马克思主义的理论家, 战略家, 革命家
+(邓小平: 政治家, 外交家, 军事家, 革命家)
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>理论家: 革命思想的输出
+两个标准
+<ul class="org-ul">
+<li>有没有外国革命竖起这个思想的大旗</li>
+<li>国外研究思想史的人, 有没有研究这个思想</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orga8e57b8"></a>把辩证法展开为三个环节<br />
+<ol class="org-ol">
+<li><a id="orgf7a1dec"></a>人的必然灭亡<br />
+<div class="outline-text-6" id="text-2-3-3-1-1">
+<blockquote>
+<p>
+讲辩证法, 却不讲死亡, 这不好, 是形而上学
+</p>
+</blockquote>
+</div>
+</li>
+<li><a id="org713ac0a"></a>社会形态的必然灭亡<br />
+<div class="outline-text-6" id="text-2-3-3-1-2">
+<blockquote>
+<p>
+社会主义作为一种历史现象, 也必然灭亡
+</p>
+</blockquote>
+<p>
+资本主义 -&gt; 社会主义 -&gt; 共产主义
+</p>
+<ul class="org-ul">
+<li>到共产主义也是有革命的, 生产力和生产关系不对的时候, 人民也会发起革命</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb6958d1"></a>政党和国家的必然灭亡&#xa0;&#xa0;&#xa0;<span class="tag"><span class="_______">论人民民主专政</span></span><br />
+<div class="outline-text-6" id="text-2-3-3-1-3">
+<blockquote>
+<p>
+作为阶级斗争的工具, 政党和国家也将死亡
+</p>
+</blockquote>
+</div>
+<ol class="org-ol">
+<li><a id="orgb1a10d8"></a>在消灭阶级的意义上中国必然灭亡<br /></li>
+<li><a id="org6f9b444"></a>在现实意义, 党的自我革命<br />
+<div class="outline-text-7" id="text-2-3-3-1-3-2">
+<ul class="org-ul">
+<li>扬弃自身落后的东西, 促使新的合乎时代的东西生成, 促进机体新陈代谢</li>
+<li>今日共产党非昨日&#x2013;习近平</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org0581274" class="outline-4">
+<h4 id="org0581274"><span class="section-number-4">2.3.4</span> 教科书体系的辩证法</h4>
+<div class="outline-text-4" id="text-2-3-4">
+<ul class="org-ul">
+<li>矛盾的观点, 联系的观点, 发展的观点</li>
+<li>矛盾, 发展同马克思, 联系的观点源于斯大林</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org4d4fdf4"></a>斯大林: 辩证法的三个特征 &lt;-&gt; 形而上学的三个特征&#xa0;&#xa0;&#xa0;<span class="tag"><span class="______________">论辩证唯物主义和历史唯物主义</span></span><br />
+<div class="outline-text-5" id="text-2-3-4-1">
+<ul class="org-ul">
+<li>转译形而上学: meta-physik -&gt; anti-dialectic
+<ul class="org-ul">
+<li>形而上的东西不会灭亡, 违背辩证法一切事物有生有灭, 则形而上即反辩证法</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orge2cf5ca"></a>联系的 &lt;-&gt; 孤立的<br />
+<div class="outline-text-6" id="text-2-3-4-1-1">
+<ul class="org-ul">
+<li>普遍联系的观点: 相对立的两物正是联系起来的
+<ul class="org-ul">
+<li>细胞在新陈代谢中, 是这个细胞, 又不是它</li>
+<li>生命本身蕴含着死亡的种子</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org7e0241a"></a>运动发展的 &lt;-&gt; 静止的<br /></li>
+<li><a id="orgfba0198"></a>从量变到质变的 &lt;-&gt; 简单增长的<br /></li>
+<li><a id="org657ed72"></a>三者其实是同一个辩证法<br />
+<div class="outline-text-6" id="text-2-3-4-1-4">
+<ul class="org-ul">
+<li>核心的载体是革命的辩证法, 是历史演化的过程</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org0478c5b" class="outline-2">
+<h2 id="org0478c5b"><span class="section-number-2">3</span> 第三讲 政治经济学批判</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>1959: 六册计划
+<ul class="org-ul">
+<li>资本</li>
+<li>雇佣劳动</li>
+<li>土地所有制</li>
+<li>国家</li>
+<li>对外贸易</li>
+<li>世界市场</li>
+</ul></li>
+</ul>
+<p>
+六册仅出版了一册中的一卷
+</p>
+<ul class="org-ul">
+<li>有认为是思想太丰富未及出版</li>
+<li>有认为是转移到资本论的四卷计划</li>
+</ul>
+</div>
+<div id="outline-container-org031a8ae" class="outline-3">
+<h3 id="org031a8ae"><span class="section-number-3">3.1</span> 批判的逻辑</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org1bf9964" class="outline-4">
+<h4 id="org1bf9964"><span class="section-number-4">3.1.1</span> 何谓批判(kritik)</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>历史的批判</li>
+<li><b>含义</b>: 澄清前提, 划定界限</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgee086a7"></a>例: 批判资本<br />
+<div class="outline-text-5" id="text-3-1-1-1">
+<ul class="org-ul">
+<li>资本的前提: 生产力发展, 城市包围农村</li>
+<li>资本的界限: 终将达到历史的界限, 走向灭亡</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org32735d8"></a>在前提和界限之内<br />
+<div class="outline-text-6" id="text-3-1-1-1-1">
+<ul class="org-ul">
+<li>资本有自己的合理性</li>
+<li>"资本带来了前所未有的生产力"</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org8d7178a"></a>例: 批判蒋介石<br />
+<div class="outline-text-5" id="text-3-1-1-2">
+<ul class="org-ul">
+<li>前提: 从无产阶级视角还是官僚资产阶级视角</li>
+</ul>
+</div>
+</li>
+<li><a id="org7e9bdc2"></a>例: 康德批判理性<br />
+<div class="outline-text-5" id="text-3-1-1-3">
+<ul class="org-ul">
+<li>为理性划定界限, 给信仰留下空间</li>
+</ul>
+</div>
+</li>
+<li><a id="orge05494e"></a>例: 特朗普<br />
+<div class="outline-text-5" id="text-3-1-1-4">
+<ul class="org-ul">
+<li>支持特朗普的恰是美国的工人阶级</li>
+<li>特朗普更看重中部地区, 中等/落后地区的发展, 得到了他们的支持</li>
+<li>特朗普代表着资本主义国家的极端民粹主义
+<ul class="org-ul">
+<li>打贸易战, 贸易保护主义政策</li>
+<li>改善蓝领, 底层工人的生活</li>
+<li>只维护本国的利益</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org2ce61ec" class="outline-4">
+<h4 id="org2ce61ec"><span class="section-number-4">3.1.2</span> 何谓政治经济学批判</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li>澄清政治经济学的前提, 划定政治经济学的界限</li>
+<li>vs. 庸俗经济学: 一定的公理性的东西是超理性的, 永恒存在的</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgeb90337"></a>一定的经济学理论和一定的经济关系有关<br />
+<div class="outline-text-5" id="text-3-1-2-1">
+<ul class="org-ul">
+<li>经济学理论反映经济关系</li>
+<li>经济关系支撑经济理论</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org375bba5"></a>商业资本主导的时代<br />
+<div class="outline-text-6" id="text-3-1-2-1-1">
+<ul class="org-ul">
+<li>大航海时代</li>
+<li>英衍生出了重商主义
+<ul class="org-ul">
+<li>价值从流通中来</li>
+</ul></li>
+<li>法衍生出了重农学派
+<ul class="org-ul">
+<li>价值从生产, 产品中来</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org1c5b491"></a>产业资本<br />
+<div class="outline-text-6" id="text-3-1-2-1-2">
+<ul class="org-ul">
+<li>劳动价值论
+<ul class="org-ul">
+<li>亚当-斯密开辟提出 &amp; 大卫-李嘉图完成</li>
+<li>进一步承认产品价值</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org3f1a8fe"></a>危机时代<br />
+<div class="outline-text-6" id="text-3-1-2-1-3">
+<ul class="org-ul">
+<li>危机理论
+<ul class="org-ul">
+<li>西斯蒙弟 对整个政治经济学做了补充</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb88e289"></a>消费主义时代<br />
+<div class="outline-text-6" id="text-3-1-2-1-4">
+<ul class="org-ul">
+<li>价值重心转向消费, 刺激消费产生价值</li>
+<li>追求名牌, 过度包装, 中国式聚餐, 异化的消费需求</li>
+<li>产生主观效用论
+<ul class="org-ul">
+<li>价值即消费者主观考虑的产品效用</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org3867a18"></a>一定经济学理论的消亡与一定的经济关系的消亡有关<br />
+<div class="outline-text-5" id="text-3-1-2-2">
+<ul class="org-ul">
+<li>消灭这些理论 -&gt; 消灭这些经济关系</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org0ec042d"></a>例: "人的本性是自私的"<br />
+<div class="outline-text-6" id="text-3-1-2-2-1">
+<ul class="org-ul">
+<li>以资本家为前提: 偷工减料是自私</li>
+<li>以自给自足的小农为前提: 自产自用, 偷工减料不是自私</li>
+<li>社会主义: 自建自用</li>
+<li>质疑: 我自产自用自建自用不也是为了自己吗?
+<ul class="org-ul">
+<li>"自私", selfish, egoisitc, 是只为自己, 排他的</li>
+<li>社会主义则是不区分自利和他利</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org855c5f3"></a>一定的经济主体不过是一定的经济关系的执行者/人格化<br />
+<div class="outline-text-5" id="text-3-1-2-3">
+<p>
+马克思: 我的理论从来不让个人来负责
+</p>
+<blockquote>
+<p>
+自该隐以来, 通过杀人的方法解决犯罪的问题从来不起效<br />
+一切犯罪都是对统治阶级经济关系的反抗
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>要批判的是特定的经济关系而不是个体, 个体只是经济关系的体现
+<ul class="org-ul">
+<li>作为资本家的恩格斯是经济关系的执行者/人格化, 是要批判的</li>
+<li>将钱捐给马克思的恩格斯已经不是经济关系的执行者/人格化</li>
+</ul></li>
+<li>"消灭资本主义"消灭的是生产关系, 而不是资本家</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1133db0" class="outline-3">
+<h3 id="org1133db0"><span class="section-number-3">3.2</span> 异化劳动理论</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org324ad99" class="outline-4">
+<h4 id="org324ad99"><span class="section-number-4">3.2.1</span> 何谓异化</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org7b8e4a9"></a>一般的(错误的庸俗的)用法<br />
+<div class="outline-text-5" id="text-3-2-1-1">
+<p>
+变化? 变异?
+</p>
+</div>
+</li>
+<li><a id="org89d0fdb"></a>词源<br />
+<div class="outline-text-5" id="text-3-2-1-2">
+<ul class="org-ul">
+<li>Entfremdung</li>
+<li>fremd = foreign, 异在的</li>
+<li>ent: 变得&#x2026;</li>
+</ul>
+<p>
+凡是异化的东西一定是异在的, 异在的东西不一定是异化的
+</p>
+</div>
+</li>
+<li><a id="org129f9d3"></a>正解<br />
+<div class="outline-text-5" id="text-3-2-1-3">
+<ul class="org-ul">
+<li>主体创造对象: 对象化的过程</li>
+<li>有一天对象反过来统治主体, 主体客体化, 对象成为新的主体, 这就是异化
+<ul class="org-ul">
+<li>例: 宗教异化: 上帝是人创造的, 反而说上帝创造了人</li>
+<li>例: 工人创造的资本, 反过来统治了工人 (卓别林: 摩登时代)
+马克思所说的异化(或说物化)</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org74343ad" class="outline-4">
+<h4 id="org74343ad"><span class="section-number-4">3.2.2</span> 何谓异化劳动</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org9ad9704"></a>工人 vs 产品<br />
+<div class="outline-text-5" id="text-3-2-2-1">
+<blockquote>
+<p>
+工人生产的财富越多, 他的生产的影响和规模越大, 他就越贫穷.
+工人创造的商品越多, 他就越变成廉价的商品.
+物的世界的增值同人的世界的贬值成正比.
+劳动生产的不仅是商品, 它还生产作为商品的劳动自身和工人, 而且是按它一般生产商品的比例生产的.<br />
+这一事实无非是表明: 劳动所生产的对象, 即劳动的产品, 作为一种异己的存在物, 作为不依赖于生产者的力量, 同劳动相对立.
+</p>
+</blockquote>
+</div>
+<ol class="org-ol">
+<li><a id="orga820f65"></a>从所有制的意义<br />
+<div class="outline-text-6" id="text-3-2-2-1-1">
+<p>
+工人创造的产品本应属于工人, 但却属于资本家了
+</p>
+</div>
+</li>
+<li><a id="org2872ac2"></a>社会关系层面<br />
+<div class="outline-text-6" id="text-3-2-2-1-2">
+<blockquote>
+<p>
+资本是积累起来的劳动
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>资本家统治劳动者, 统治工人</li>
+<li>"资本家养活了工人"</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbe1b167"></a>消费主义的含义<br />
+<div class="outline-text-6" id="text-3-2-2-1-3">
+<ul class="org-ul">
+<li>不再是"你死我活", 工人与工厂俱灭</li>
+<li>温和统治</li>
+<li>"今年秋天第一杯奶茶": 温情脉脉的广告词包裹着异化的消费主义</li>
+<li>塑造"有闲阶级", 追求名牌, 骄奢</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org6c6cb7b"></a>工人 vs 劳动<br />
+<div class="outline-text-5" id="text-3-2-2-2">
+<ul class="org-ul">
+<li>工人是主体, 通过对象化的活动创造出产品, 产品应具有工人的本质.</li>
+<li>但是产品和工人异化了, 与工人对立了, 说明主体的存在和活动之间已经发生分裂了,
+产品才照见了与工人相分裂的本质</li>
+<li>亦即工人和劳动的分裂, 异化</li>
+</ul>
+<blockquote>
+<p>
+劳动的异己性完全表现在: 只要肉体的强制或其他强制一停止, 人们就会像逃避瘟疫那样逃避劳动
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>除了肉体的强制, 还有经济的强制</li>
+<li>注: 有快乐的工人吗? 这是社会的偶然性, 马克思研究讨论的是整体的性质</li>
+<li>由于经济强制, 虽然苦于异化, 但仍趋之若鹜</li>
+<li>如果有幸选到了喜欢的专业喜欢的工作, 
+大体上不是异化的, 但也会被异化侵蚀: 时间, 工作量&#x2026;
+<ul class="org-ul">
+<li>自由而狭隘的人</li>
+</ul></li>
+<li>未来的社会主义会是自由而全面的
+<ul class="org-ul">
+<li>渔夫不总是渔夫, 猎人不总是猎人</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org04eb8c4"></a>人 vs 类生活&#xa0;&#xa0;&#xa0;<span class="tag"><span class="_____">不成熟时期</span>&#xa0;<span class="__">抽象</span>&#xa0;<span class="____">人道主义</span></span><br />
+<div class="outline-text-5" id="text-3-2-2-3">
+<ul class="org-ul">
+<li><b>类</b> 生活 -&gt; 马克思不成熟时期, 抽象人道主义色彩的表述, 有争议</li>
+<li>实质是说: 劳动不是人的生活本身, 而是人的生存手段</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgba25284"></a>那资本家是异化的吗?<br />
+<div class="outline-text-6" id="text-3-2-2-3-1">
+<p>
+总体上也是异化的
+</p>
+<ul class="org-ul">
+<li><p>
+资本家从事关系处理, 经营管理活动, 是因为资本的指令, 资本扩张的规律
+</p>
+<blockquote>
+<p>
+资产阶级撕下了罩在家庭关系上的温情脉脉的面纱, 把这种关系变成了纯粹的金钱关系
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>任正非要求欲辞职往北京陪妻子的副总与不愿放弃工作来广州的妻子离婚</li>
+<li>赚1000w, 骄奢300w, 投入再生产700w
+<ul class="org-ul">
+<li>300w是不异化的</li>
+<li>700w是异化的</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgb5f48a6"></a>人 vs 人<br />
+<div class="outline-text-5" id="text-3-2-2-4">
+<p>
+工人和他人相异化, 首要指资本家, "产业后备军", 还有其他
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgfd1e392" class="outline-4">
+<h4 id="orgfd1e392"><span class="section-number-4">3.2.3</span> 扬弃异化</h4>
+<div class="outline-text-4" id="text-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org1ef3a06"></a>目的: 自主活动/自由活动<br />
+<div class="outline-text-5" id="text-3-2-3-1">
+<ol class="org-ol">
+<li>产品归劳动者所有
+社会所有制
+<ul class="org-ul">
+<li>是"不折不扣"地发放至劳动者手中吗?
+不是, 会有一部分剩余财富, 由社会进行储备, 用于应对灾害</li>
+</ul></li>
+<li>全面的社会关系变革
+"两参一改三结合"
+<ul class="org-ul">
+<li>干部参加生产劳动, 工人参加企业管理</li>
+<li>改革企业中不合理的规章制度</li>
+<li>技术改革中实行企业领导干部, 技术人员, 工人三结合的原则</li>
+</ul></li>
+<li>劳动成为本质需要
+<ul class="org-ul">
+<li>指后一种劳动: 扬弃异化后的自由活动, 而非异化劳动</li>
+<li>"可我不想劳动"
+<ul class="org-ul">
+<li>只想到了异化的对立面, 亦即不劳动</li>
+<li>真正的超越异化, 自由劳动会成为本质需要</li>
+</ul></li>
+<li>疫情期间稍见端倪</li>
+</ul></li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org07565d6" class="outline-3">
+<h3 id="org07565d6"><span class="section-number-3">3.3</span> 剩余价值学说</h3>
+<div class="outline-text-3" id="text-3-3">
+<blockquote>
+<p>
+资本家剥削工人阶级的秘密
+</p>
+</blockquote>
+</div>
+<div id="outline-container-org335c120" class="outline-4">
+<h4 id="org335c120"><span class="section-number-4">3.3.1</span> 资本的流通</h4>
+<div class="outline-text-4" id="text-3-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org2d331b8"></a>资本出现前<br />
+<div class="outline-text-5" id="text-3-3-1-1">
+<ol class="org-ol">
+<li>Ware-Ware
+物物交换</li>
+<li>Ware-Gold-Ware
+<ul class="org-ul">
+<li>物物交换过程中产生一般等价物, 一般等价物固定下来成为货币</li>
+<li>初衷和目的都是物, 是实际需要, 为了物的使用价值</li>
+<li>还没有资本流通</li>
+</ul></li>
+</ol>
+</div>
+</li>
+<li><a id="org6e4bdd7"></a>资本出现后<br />
+<div class="outline-text-5" id="text-3-3-1-2">
+<ol class="org-ol">
+<li><p>
+Gold-Ware-Gold', Gold' = Gold + &Delta; Gold
+</p>
+<ul class="org-ul">
+<li>资本流通, 资本出现了, <b>商业资本</b></li>
+<li>初衷和目的都是钱, 交换价值压制了使用价值</li>
+</ul>
+<p>
+<i>刘强东</i>
+</p></li>
+<li><p>
+Gold-Gold'
+</p>
+<ul class="org-ul">
+<li>借贷, 金融行业, <b>生息资本</b></li>
+<li>生息资本是不产生价值的</li>
+</ul>
+<p>
+<i>马云</i>
+</p></li>
+<li><p>
+Gold-Ware-&gt;Production-&gt;Ware'-Gold'
+</p>
+<ul class="org-ul">
+<li>真正产生财富的, <b>生产资本</b>, <b>产业资本</b></li>
+</ul>
+<p>
+<i>任正非</i>
+</p></li>
+</ol>
+</div>
+</li>
+<li><a id="org7164804"></a>异同<br />
+<ol class="org-ol">
+<li><a id="org2917edb"></a>从资本一般的角度看<br />
+<div class="outline-text-6" id="text-3-3-1-3-1">
+<p>
+都是由G到G'
+</p>
+</div>
+</li>
+<li><a id="org069ff22"></a>从具体资本的角度看<br />
+<div class="outline-text-6" id="text-3-3-1-3-2">
+<ul class="org-ul">
+<li>具体的价值不在流通中产生, 不在借贷中产生</li>
+<li>生产能产生价值</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org3dfa60e" class="outline-4">
+<h4 id="org3dfa60e"><span class="section-number-4">3.3.2</span> 资本增殖公式</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<ul class="org-ul">
+<li>c + v = C -&gt; Production -&gt; C' = c + v + m
+<ul class="org-ul">
+<li>konstant + variable = Kapital</li>
+</ul></li>
+<li>C: 预付资本</li>
+<li>c: 固定资本(厂房, 机械, 原材料)
+<ul class="org-ul">
+<li><b>原材料价值未变(甚至损耗变少), 转移到了产品中, 不创造新的价值</b></li>
+<li>机械在其寿命中, 价值逐渐转移到产品中</li>
+</ul></li>
+<li>v: 可变资本(雇佣工资, 劳动力商品)
+<ul class="org-ul">
+<li>工资v, 雇佣工人, <b>会创造出v + m的新的价值</b></li>
+<li>工人创造的价值高于他拿到的工资, 差值m, 剩余价值</li>
+</ul></li>
+<li>m (Mehrwert): 剩余价值, 资本家的目的, 剥削工人的部分</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org0ebb0a1"></a>立场<br />
+<div class="outline-text-5" id="text-3-3-2-1">
+<ul class="org-ul">
+<li>(c + v) + m
+<ul class="org-ul">
+<li>成本 + 利润</li>
+<li>资本家的立场:
+资本家抛出成本, 促进社会生产, 工人只是来打工的, 利润应当给资本家</li>
+</ul></li>
+<li>c + (v + m)
+<ul class="org-ul">
+<li>不变资本 + (可变资本 + 剩余价值)</li>
+<li>工人的立场:
+真正进行生产的是工人, 创造剩余价值的是工人</li>
+</ul></li>
+<li>"我们客观的, 无立场地研究这个社会问题/哲学问题"
+<ul class="org-ul">
+<li>立场是一定有的</li>
+<li>去意识形态的意识形态</li>
+<li>统治者的惯用技俩</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org7a90698"></a>工资v是怎么确定的?<br />
+<div class="outline-text-5" id="text-3-3-2-2">
+<p>
+工资是劳动力商品的价值
+</p>
+<ul class="org-ul">
+<li>保证工人这个周期的生存, 来保证工人下个周期能再次提供劳动力</li>
+<li>还要保证工人能维系家庭, 培养下一代劳动力</li>
+<li>还要培育高级劳动者高级工人, 发挥出高级劳动力</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfbd1071"></a>绝对剩余价值 和 相对剩余价值<br />
+<div class="outline-text-5" id="text-3-3-2-3">
+<ul class="org-ul">
+<li>绝对m: 延长工时, 延长越长, 产出m越多</li>
+<li>相对m: 改进技术, 提高效率, 产出m的速率越高</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgefc5fe9" class="outline-4">
+<h4 id="orgefc5fe9"><span class="section-number-4">3.3.3</span> 剩余价值率 m'</h4>
+<div class="outline-text-4" id="text-3-3-3">
+<ul class="org-ul">
+<li>m' = m / v
+<ul class="org-ul">
+<li>表示工人被剥削的程度</li>
+<li>v的上升, 使工人的革命性, 意识降低</li>
+<li>但同时m也在上升, m'上升, 总体来说工人被剥削的程度还是升高的</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf7a0c67" class="outline-4">
+<h4 id="orgf7a0c67"><span class="section-number-4">3.3.4</span> 资本的利润率 p'</h4>
+<div class="outline-text-4" id="text-3-3-4">
+<ul class="org-ul">
+<li>p' = m / (c + v) = m' / (c / v + 1)
+<ul class="org-ul">
+<li>c / v: 资本的有机构成, 随机械化的增加, 社会的进步, 值会上升</li>
+<li>利润率p'随着社会进步会下降, 那么资本主义必将灭亡, 吗?</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org09baea0"></a>马克思的阿喀琉斯之踵&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__________">马克思的阿喀琉斯之踵</span>&#xa0;<span class="______">马克思的错误</span>&#xa0;<span class="_______">马克思的急躁病</span></span><br />
+<div class="outline-text-5" id="text-3-3-4-1">
+<ul class="org-ul">
+<li>世界市场形成
+<ul class="org-ul">
+<li>马克思左派地认为, 世界普遍联系, 革命会是世界性的</li>
+<li>预言俄国会先产生革命, 如果俄国革命能引发欧洲革命并互为补充,
+进而引发世界革命, 那么共产主义革命有可能实现</li>
+</ul></li>
+<li>问题在于过于乐观地看待了资本主义市场的发展
+<ul class="org-ul">
+<li>由于世界市场, 资本主义仍有很多落后国家可以输出商品输出资本</li>
+<li>世界市场反而遏制了共产主义革命</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb261868" class="outline-4">
+<h4 id="orgb261868"><span class="section-number-4">3.3.5</span> 资本家劳动吗?</h4>
+<div class="outline-text-4" id="text-3-3-5">
+</div>
+<ol class="org-ol">
+<li><a id="org035b355"></a>马克思所谓资本家<br />
+<div class="outline-text-5" id="text-3-3-5-1">
+<ul class="org-ul">
+<li>是资本的人格化, 资本的执行者</li>
+<li>是纯粹的资本家, 是仅仅执行资本任务的人的部分
+<ul class="org-ul">
+<li>为了理论的精确性, 方便性</li>
+</ul></li>
+<li>在这个意义上, 资本家是不劳动的</li>
+<li>现实中, 纯粹的实利者
+<ul class="org-ul">
+<li>企业的大股东, 不管理公司, 盈利时去分红</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org564c69f"></a>现实中资本家往往是复杂的<br />
+<div class="outline-text-5" id="text-3-3-5-2">
+<ul class="org-ul">
+<li>现实中资本家往往参加一些劳动, 创造一些价值
+<ul class="org-ul">
+<li>作为管理劳动者也创造了价值, 产品中也包含着他的劳动部分</li>
+<li>不是纯粹的资本家</li>
+</ul></li>
+<li>历史的发展
+<ul class="org-ul">
+<li>劳动价值渐减, 剥削价值渐增</li>
+<li>小生产者
+<ul class="org-ul">
+<li>承担全部劳动</li>
+</ul></li>
+<li>简单的雇佣
+<ul class="org-ul">
+<li>承担大部分劳动</li>
+<li>%50以下来自剥削收入</li>
+</ul></li>
+<li>大型雇佣
+<ul class="org-ul">
+<li>几乎不承担劳动</li>
+<li>%50以上来自剥削收入</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org65457ff"></a>有一部分所谓的劳动不是真正的劳动<br />
+<div class="outline-text-5" id="text-3-3-5-3">
+<blockquote>
+<p>
+有一种劳动, 只有在肮脏的可鄙的生产关系(社会关系)中才能称为劳动
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>奴隶主挥鞭子也很累</li>
+<li>资本家混关系酒局</li>
+<li>高利贷者催债</li>
+<li><b>不是真正的劳动</b></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc5c587b"></a>如何评价<br />
+<div class="outline-text-5" id="text-3-3-5-4">
+<ul class="org-ul">
+<li>分为剥削部分和劳动部分各自评价</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org40af214" class="outline-2">
+<h2 id="org40af214"><span class="section-number-2">4</span> 第四讲 共产主义的三重维度</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org2f2aa50" class="outline-3">
+<h3 id="org2f2aa50"><span class="section-number-3">4.1</span> 作为现实运动的共产主义</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgf02eaa5" class="outline-4">
+<h4 id="orgf02eaa5"><span class="section-number-4">4.1.1</span> 是什么?不是理想, 是消灭现存状况的现实的运动</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<blockquote>
+<p>
+共产主义对我们来说不是应当确立的状况, 不是现实应当与之相适应的理想.
+我们所称为共产主义的是那种消灭现存状况的现实的运动. --<i>形态</i>
+</p>
+</blockquote>
+<ul class="org-ul">
+<li><b>不是理想</b>, 是改变现状</li>
+<li>是对自我异化, 私有制的积极扬弃 (青年时期)</li>
+<li>是消灭现存状况的现实的运动 (成熟时期, <i>形态</i>)</li>
+<li>工人阶级绝对不是要实现什么理想, 而是解放旧社会中已经孕育的新社会的因素. (晚年时期, <i>法兰西内战</i>)</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org2ba66c4"></a>为什么我们仍称"共产主义理想"<br />
+<div class="outline-text-5" id="text-4-1-1-1">
+<p>
+我们只能把它当成理想无限推后
+</p>
+<ul class="org-ul">
+<li>无产阶级的革命性在降低, 共产主义的现实性在下降, 理想性在上升</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org52d2773" class="outline-4">
+<h4 id="org52d2773"><span class="section-number-4">4.1.2</span> 何以是? 共产主义的理论依据</h4>
+</div>
+<div id="outline-container-org80353aa" class="outline-4">
+<h4 id="org80353aa"><span class="section-number-4">4.1.3</span> 何以是? 现实考量, 现实依据</h4>
+<div class="outline-text-4" id="text-4-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgd0b8b8e"></a>客观情势 &#x2013; 恩格斯总结<br />
+<div class="outline-text-5" id="text-4-1-3-1">
+<p>
+资本主义陷入了三重对立中
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orga721f79"></a>生产的社会化同资本主义的私人占有之间的矛盾<br />
+<div class="outline-text-6" id="text-4-1-3-1-1">
+<ul class="org-ul">
+<li>生产的社会化
+<ol class="org-ol">
+<li>产品是为了交换, 为了资本 &#x2013; 希望生产更多</li>
+<li>希望交换更多, 建构消费主义, 异化消费 &#x2013; 需要购买力, 消费能力</li>
+</ol></li>
+<li>资本主义的私人占有
+<ul class="org-ul">
+<li>压榨工资</li>
+</ul></li>
+<li>导致生产过剩, 经济危机</li>
+<li>2008经济危机
+<ul class="org-ul">
+<li>相对过剩</li>
+<li id="次级贷款">为资本, 不需要抵押物也贷给百姓
+<ul class="org-ul">
+<li>导致提前消费</li>
+</ul></li>
+<li>银行破产, 百姓破产</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org0003c2a"></a>无产阶级和资产阶级的矛盾<br /></li>
+<li><a id="org3132abf"></a>企业间的无序竞争无序发展 vs 企业内的有序发展<br />
+<div class="outline-text-6" id="text-4-1-3-1-3">
+<ul class="org-ul">
+<li>导致企业联合垄断的发生
+<ul class="org-ul">
+<li>例: 蒙牛伊利</li>
+<li>马克思认为垄断资本主义为社会主义建好架构基础
+<ul class="org-ul">
+<li>"社会主义 = 美国的托拉思 + 美国的电气化 + 德国的铁路 + 俄国的苏维埃政权" &#x2013; 列宁</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org26848b3"></a>主体力量<br />
+<ol class="org-ol">
+<li><a id="org68786b7"></a>无产阶级/无产者<br />
+<div class="outline-text-6" id="text-4-1-3-2-1">
+<ul class="org-ul">
+<li>无产者不是没有财产, 而是不掌握生产资料</li>
+<li>本质: <b>打工人</b>
+<ul class="org-ul">
+<li>不要变成无害的心灵鸡汤, 道德说教</li>
+</ul></li>
+<li>但马克思恩格斯在很大程度上, 仍强调无产者的赤贫化
+<ul class="org-ul">
+<li>赤贫的无产者, 革命性较强, "光脚的不怕穿鞋的"</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org9021b48"></a>然而欧洲的无产者中产化了<br />
+<div class="outline-text-6" id="text-4-1-3-2-2">
+<ul class="org-ul">
+<li>恩格斯: "中间阶级是最大的反革命的力量"</li>
+<li>要让工人吃的好一些穿的好一些, 但这没有改变工人被奴役的命运,
+这只说明工人自己为自己套下的金锁链已经足够沉重了, 所以资本家让它变得轻一些</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org12296ef"></a>中心依附理论<br />
+<div class="outline-text-7" id="text-4-1-3-2-2-1">
+<ul class="org-ul">
+<li>中心国家之所以能发展, 维系福利, 是建立在对边缘国家的剥削之上的, 是依附于边缘国家的</li>
+<li>之所以能维持生态良好, 是把有害企业转移到了边缘国家,
+把垃圾转移到边缘国家, 边缘国家的资本家买来垃圾进一步分类盈利</li>
+<li>中心国家的工人在对边缘国家的剥削中分得了一杯羹, 资本化了</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org780f633"></a>M型社会结构/新穷人<br />
+<ol class="org-ol">
+<li><a id="orgda4531a"></a>M型社会结构<br />
+<div class="outline-text-7" id="text-4-1-3-2-3-1">
+<ul class="org-ul">
+<li>不稳定的社会结构: 哑铃型</li>
+<li>稳定的社会结构: 橄榄型/枣核型
+<ul class="org-ul">
+<li>不愿革命的中产阶级占大多数</li>
+<li>有钱人不多, 不会引发社会不满</li>
+<li>赤贫化人不多, 不会引起动荡</li>
+</ul></li>
+<li>枣核型中的中产阶级产生分化, 形成M型社会结构</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb8fb07d"></a>汪辉教授提出新穷人, 新工人概念<br />
+<div class="outline-text-7" id="text-4-1-3-2-3-2">
+<ul class="org-ul">
+<li>"中产阶级"是保守的, 模糊的称谓, 分称为无产者, 高级无产者, 打工人等等更合适</li>
+<li id="新穷人">工资逐步上升, 但是社会福利货币化了</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org79032b4" class="outline-3">
+<h3 id="org79032b4"><span class="section-number-3">4.2</span> 作为社会形态的共产主义</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org02fd5d9" class="outline-4">
+<h4 id="org02fd5d9"><span class="section-number-4">4.2.1</span> 社会形态阶段论</h4>
+<div class="outline-text-4" id="text-4-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org3676da1"></a>五阶段说<br />
+<div class="outline-text-5" id="text-4-2-1-1">
+<ol class="org-ol">
+<li>原始共产社会</li>
+<li>奴隶社会</li>
+<li>封建社会(有异议, 既可以是西欧, 也可以是中国)</li>
+<li>资本主义社会</li>
+<li>共产主义社会(包括社会主义)</li>
+</ol>
+<p>
+\\ 马克思在 <i>形态</i> 和 <i>批判</i> 中大体提过五阶段
+</p>
+</div>
+</li>
+<li><a id="org5a3efba"></a>三阶段说<br />
+<div class="outline-text-5" id="text-4-2-1-2">
+<blockquote>
+<p>
+人类社会分为三个阶段 &#x2013; 5758经济学手稿
+</p>
+</blockquote>
+</div>
+<ol class="org-ol">
+<li><a id="orge0237a3"></a>人的依赖性的阶段<br />
+<div class="outline-text-6" id="text-4-2-1-2-1">
+<ul class="org-ul">
+<li>原始社会, 原子的人不能生存</li>
+<li>奴隶社会, 奴隶与奴隶主相互依附</li>
+<li>封建社会, 人身依附, 归属关系依附关系</li>
+</ul>
+</div>
+</li>
+<li><a id="org0e19cc3"></a>以物的依赖性为基础的人的独立性的阶段<br />
+<div class="outline-text-6" id="text-4-2-1-2-2">
+<ul class="org-ul">
+<li>平等交换, 商品经济贯彻到了社会生活, 法律意义上出现了人和人的平等</li>
+<li>"资本主义完成了政治解放"</li>
+<li>但是这不是真正的独立性, 而是建立在物的依赖性基础上
+<ul class="org-ul">
+<li>如果双方的经济地位不平等, 则实质上仍是不平等的</li>
+<li>包工头和农民工的故事</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcdad530"></a>建立在人的自由而全面的发展之上的, 同时建立在社会财富共同所有的基础之上的人的自由个性<br />
+<div class="outline-text-6" id="text-4-2-1-2-3">
+<ul class="org-ul">
+<li>扬弃异化劳动</li>
+<li>自由</li>
+<li>全面</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orga5d2391" class="outline-4">
+<h4 id="orga5d2391"><span class="section-number-4">4.2.2</span> 共产主义社会的具体阶段</h4>
+<div class="outline-text-4" id="text-4-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgbde6bdd"></a>马克思: 没有社会主义提法<br />
+<div class="outline-text-5" id="text-4-2-2-1">
+<ol class="org-ol">
+<li>资本主义</li>
+<li>无产阶级专政
+<ul class="org-ul">
+<li>革命的过渡时期, 不是共产主义</li>
+<li>专政(独裁)
+<ul class="org-ul">
+<li>恩格斯: 庸人们, 去看一看巴黎公社, 看一看 <i>法兰西内战</i>, 它比资本主义的民主还要民主, 比资本主义的自由还要自由</li>
+<li><i>论人民民主专政</i>: 对人民民主, 对敌人独裁</li>
+</ul></li>
+</ul></li>
+<li>分界线: &lt;国家消亡 &#x2013;恩格斯&gt;</li>
+<li>共产主义
+也可以分为两个阶段
+<ol class="org-ol">
+<li>共产主义第一阶段
+<ul class="org-ul">
+<li>按劳分配: 资本主义社会的残余, 资产阶级法权
+<ul class="org-ul">
+<li>等量劳动力交换等量产品, 基于劳动力差别, 不平等</li>
+<li id="当前中国: 按劳分配为主体, 多种分配方式并存">资产阶级法权分配为主体, 剥削更强的其他分配方式为补充</li>
+</ul></li>
+</ul></li>
+<li>共产主义高级阶段
+<ul class="org-ul">
+<li>按需分配</li>
+</ul></li>
+</ol></li>
+</ol>
+</div>
+</li>
+<li><a id="org59ff225"></a>列宁的改动<br />
+<div class="outline-text-5" id="text-4-2-2-2">
+<ul class="org-ul">
+<li>共产主义的第一阶段就是社会主义阶段</li>
+<li>第一阶段仍有式微的国家</li>
+</ul>
+</div>
+</li>
+<li><a id="org89758b4"></a>斯大林的改动<br />
+<div class="outline-text-5" id="text-4-2-2-3">
+<ul class="org-ul">
+<li>为了消灭国家, 就要加强国家 (<b>核心</b>)</li>
+<li>为了消灭无产阶级专政, 就要加强无产阶级专政</li>
+<li>国有制, 集体所有制</li>
+<li>一国建成社会主义</li>
+<li>混同了无产阶级专政和社会主义(即共产主义第一阶段), 而独立了共产主义高级阶段(作为"共产主义")</li>
+</ul>
+</div>
+</li>
+<li><a id="orgac28bf2"></a>马克思共产主义的特征<br />
+<ol class="org-ol">
+<li><a id="org0db6d81"></a>社会所有, 个人所有<br />
+<div class="outline-text-6" id="text-4-2-2-4-1">
+<ul class="org-ul">
+<li>生产资料: 社会所有</li>
+<li>生活资料: 个人所有</li>
+<li>资本主义社会: 生产资料大部分为少数资本家所有, 生产资料全部为资本家所有</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org16cffe0"></a>对共产主义的诽谤<br />
+<div class="outline-text-7" id="text-4-2-2-4-1-1">
+<ol class="org-ol">
+<li>共产共妻?
+<ul class="org-ul">
+<li>资本主义已经是共妻制了, 一夫一妻为表像, 以资本实现的正式和非正式的卖淫为补充</li>
+<li>提到这个问题, 本质是把妻子物化为财产</li>
+<li>真正的爱情现在实现在无产阶级之间, 未来会回归到真正的爱情</li>
+</ul></li>
+<li>跑步进入共产主义?</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org6d31a53"></a>国家消亡<br />
+<div class="outline-text-6" id="text-4-2-2-4-2">
+<ul class="org-ul">
+<li>马恩: 共产主义第一阶段国家已经消亡</li>
+<li>列宁: 共产主义第一阶段仍有式微的国家</li>
+<li>斯大林:</li>
+</ul>
+</div>
+</li>
+<li><a id="org4ce9d40"></a>国际性&#xa0;&#xa0;&#xa0;<span class="tag"><span class="_______">德意志意识形态</span></span><br />
+<div class="outline-text-6" id="text-4-2-2-4-3">
+<p>
+<i>形态</i>
+</p>
+<ul class="org-ul">
+<li>共产主义必须以世界性的形式出现
+<ul class="org-ul">
+<li>否则, 资本主义的任何交往都会导致地域性的共产主义的崩溃</li>
+<li>马恩一直坚持世界革命主张</li>
+<li>共产主义和民族主义是矛盾的
+<ul class="org-ul">
+<li>但是不是消灭民族</li>
+<li>列宁: 东方殖民地理论, 二者在一定条件下, 在策略上可以联合
+<ul class="org-ul">
+<li>反帝国的民族主义可以和马克思主义组成策略上的联盟</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>斯大林: 一国建成社会主义</li>
+<li>为什么苏联叫社会主义共和国联盟?
+<ul class="org-ul">
+<li>列宁: 向社会主义过渡, 叫社会主义是旗号</li>
+</ul></li>
+<li>邓小平: 我们搞了几十年的社会主义, 事实上不够格</li>
+</ul>
+</div>
+</li>
+<li><a id="orgdd10d81"></a>自由全面 vs. 资本主义法权 异化<br />
+<div class="outline-text-6" id="text-4-2-2-4-4">
+<ul class="org-ul">
+<li>共产主义也有必要劳动</li>
+<li>异化在共产主义第一阶段还广泛存在着</li>
+<li>"物质财富极大丰富, 道德水平极大提高"</li>
+<li>道德提高是结果, 不是前提
+<ul class="org-ul">
+<li>共产主义下按需分配, 不再有盗窃</li>
+<li>要改变的是社会关系, 道德水平自然提高</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org47eab17"></a>按需分配 vs. 按劳分配<br />
+<div class="outline-text-6" id="text-4-2-2-4-5">
+<ul class="org-ul">
+<li>需求回归合理化真实化</li>
+<li>消灭雇佣劳动, 维护清扫劳动自己承担</li>
+<li>当前资本的扩张让我们有了无限的欲望</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org025c5a4" class="outline-2">
+<h2 id="org025c5a4"><span class="section-number-2">5</span> 第五讲 马克思主义的国家, 宗教, 婚姻家庭理论</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+德国古典哲学, 古典政治经济学, 空想社会主义发展, 形成马克思主义的总论
+</p>
+<ul class="org-ul">
+<li>哲学(1, 2章)</li>
+<li>政治经济学(3章)</li>
+<li>科学社会主义(4章)</li>
+</ul>
+</div>
+<div id="outline-container-orgb027e50" class="outline-3">
+<h3 id="orgb027e50"><span class="section-number-3">5.1</span> 国家观</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org0a8c100" class="outline-4">
+<h4 id="org0a8c100"><span class="section-number-4">5.1.1</span> 所谓国家</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>state, stant, 政治国家, 公权力机关, <b>讨论中心</b></li>
+<li>nation, nation, 民族国家, 民族
+<ul class="org-ul">
+<li><b>共产主义不是消灭民族</b>
+<ul class="org-ul">
+<li>民族间的压迫随着阶级压迫的消灭而消灭</li>
+<li>"民族问题, 种族问题归根结底还是阶级问题" &#x2013;毛</li>
+</ul></li>
+<li>民族主义和马克思主义, 社会主义是对立的
+<dl class="org-dl">
+<dt>既是民族主义者, 又是社会主义者?</dt><dd>NationalSocialisms: 国家社会主义工人党, 民族社会主义工人党, 即Nazi</dd>
+</dl></li>
+</ul></li>
+<li>country, land, 文化意义上的国家</li>
+<li>马克思: "工人阶级没有祖国", 指政治国家
+<ul class="org-ul">
+<li>二战中, 可惜第二国际各国倒向了民族主义, 纷纷维护本国利益</li>
+<li>列宁: 让沙皇俄国在战争中失败, 转国际战争为国内战争</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org971eaed" class="outline-4">
+<h4 id="org971eaed"><span class="section-number-4">5.1.2</span> 国家的本质 (国家和阶级的关系)</h4>
+<div class="outline-text-4" id="text-5-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org622e3e9"></a>起源论<br />
+<div class="outline-text-5" id="text-5-1-2-1">
+<p>
+恩格斯: 国家是阶级矛盾不可调和的产物
+</p>
+<ol class="org-ol">
+<li>原始社会, 无剩余食粮供斗争所获俘虏, 只能杀掉</li>
+<li>生产力发展, 存在剩余食粮, 俘虏变成奴隶</li>
+<li>物质利益分配不公, 产生阶级矛盾</li>
+<li>为在阶级矛盾中维护高层阶级利益, 警察, 保镖出现, 国家出现</li>
+</ol>
+</div>
+</li>
+<li><a id="org98dc4cc"></a>本质论<br />
+<ol class="org-ol">
+<li><a id="org2a7ed5a"></a>马克思: 国家是虚幻的共同体<br />
+<div class="outline-text-6" id="text-5-1-2-2-1">
+<p>
+披着普遍利益外衣的, 特殊利益的代言
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgb5913d1"></a>普遍性和特殊性<br />
+<div class="outline-text-7" id="text-5-1-2-2-1-1">
+<ul class="org-ul">
+<li>国家把自己塑造成普遍中立的共同体
+<ul class="org-ul">
+<li>"为了从社会纷争中维护你我的安全利益, 我们需要国家作为一个中立的普遍共同体"</li>
+</ul></li>
+<li>但国家在普遍利益之下始终偏袒特殊群体</li>
+</ul>
+</div>
+</li>
+<li><a id="org449c04b"></a>无产阶级专政的国家不是虚幻的<br />
+<div class="outline-text-7" id="text-5-1-2-2-1-2">
+<p>
+因其宣称只代表无产阶级的利益, 不是虚幻的
+</p>
+<ul class="org-ul">
+<li>"中国是工人阶级领导的&#x2026;人民民主专政的国家"</li>
+</ul>
+</div>
+</li>
+<li><a id="org50e8c56"></a>一个国家不可能"代表全体阶级的利益"<br />
+<div class="outline-text-7" id="text-5-1-2-2-1-3">
+<p>
+那也是虚幻的共同体了
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org6fc8932"></a>"国防政府"<br />
+<div class="outline-text-8" id="text-5-1-2-2-1-3-1">
+<p>
+发现巴黎公社工人运动时, 联合国外侵略者镇压工人
+</p>
+<ul class="org-ul">
+<li>"宁予外人, 不予家奴"</li>
+</ul>
+</div>
+</li>
+<li><a id="org942f648"></a>"人民国家"<br />
+<div class="outline-text-8" id="text-5-1-2-2-1-3-2">
+<ul class="org-ul">
+<li>人民 -&gt; 虚幻的包装</li>
+<li>国家 -&gt; 特殊群体</li>
+<li>恩格斯: 这是矛盾的形容语, 是不可能实现的</li>
+</ul>
+</div>
+</li>
+<li><a id="orgacca2d7"></a>发达资本主义国家也在维护工人/全人类利益?<br />
+<div class="outline-text-8" id="text-5-1-2-2-1-3-3">
+<ul class="org-ul">
+<li>国家本就是要调和阶级矛盾, 维护工人利益是为了防止工人革命</li>
+<li>既然只是调和了阶级矛盾, 那本质就是维护了阶级的存在, 保留了统治阶级, 保留了二元关系</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a id="org3bd242a"></a>马克思: 国家是阶级统治的工具<br /></li>
+</ol>
+</li>
+<li><a id="org2e0242c"></a>演进论<br />
+<div class="outline-text-5" id="text-5-1-2-3">
+<p>
+马克思: 国家是一定历史时期下, 一定的阶级实行统治的条件, 国家的演进也是阶级变换的结果
+</p>
+<ul class="org-ul">
+<li>例: 西欧, 法国资本主义萌芽时, 理想的状态是君主专制集权
+<ul class="org-ul">
+<li>诸侯分权, 各国混战中, 希望有强大的君主统一国家, 统一市场, 以发展资本</li>
+<li>壮大时期, 革命, 分权, 达到议会制, 资产阶级独掌政权</li>
+<li>无产阶级壮大, 革命, 夺权
+<ul class="org-ul">
+<li>如1848年法国无产阶级起义, "现代社会两方第一次正面对决"</li>
+</ul></li>
+<li>资产阶级为镇压无产阶级, 改为总统制(路易-波拿巴), 集权, 甚至复辟帝制</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org02f7021"></a>消亡论<br />
+<div class="outline-text-5" id="text-5-1-2-4">
+<p>
+马克思, 恩格斯, 列宁, 斯大林, 毛泽东: 阶级消亡后, 国家也将不可避免地消亡
+</p>
+<ul class="org-ul">
+<li>指政治国家消亡</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org3f2ed54" class="outline-4">
+<h4 id="org3f2ed54"><span class="section-number-4">5.1.3</span> 无产阶级专政</h4>
+<div class="outline-text-4" id="text-5-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org426bc2f"></a>当代政治体制(政体)<br />
+<ol class="org-ol">
+<li><a id="orgb79cbc4"></a>议会制<br />
+<div class="outline-text-6" id="text-5-1-3-1-1">
+<ul class="org-ul">
+<li>最高权力机关是议会</li>
+<li>选民普选产生议会, 来自不同党派</li>
+<li>议席多数的是多数党, 议席超过一半的一般就是执政党</li>
+<li>执政党可以组建内阁, 即政府
+<ul class="org-ul">
+<li>由于执政党为多数党, 只要党内不分裂, 则本党法案议会裁决一定通过</li>
+<li>党间的执政联盟</li>
+<li>行政归政府, 立法归议会, 并没有三权分立 -&gt; <b>议行合一</b></li>
+</ul></li>
+<li>国家元首是:
+<ul class="org-ul">
+<li>君主立宪制国家: 无实权的君主, 世袭, 国家的象征, 走形式; 政府首相掌握实权. 英国, 丹麦, 瑞典, 日本</li>
+<li>议会共和制国家: 无实权的总统, 民选, 国家的象征, 走形式; 政府总理掌握实权. 意大利, 德国, 印度</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd2da7b4"></a>总统制/总统共和制<br />
+<div class="outline-text-6" id="text-5-1-3-1-2">
+<p>
+国家元首, 政府首脑都是总统
+</p>
+<ul class="org-ul">
+<li>票选总统: 行政权</li>
+<li>票选议会: 立法权</li>
+<li>法院: 司法权</li>
+<li>三权分立</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd485a8a"></a>中国的社会主义民主共和制<br />
+<div class="outline-text-6" id="text-5-1-3-1-3">
+<ul class="org-ul">
+<li>最高权力是全国人民代表大会</li>
+<li>国务院(政府)总理掌管行政权</li>
+<li>国家元首是国家主席, 没有实权</li>
+<li>共产党总书记, 实权</li>
+<li>军委主席, 实权</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org533a8e4"></a>巴黎公社<br />
+<ol class="org-ol">
+<li><a id="orgac7334b"></a>普选制且可以随时撤换<br />
+<div class="outline-text-6" id="text-5-1-3-2-1">
+<ul class="org-ul">
+<li>对比之前政策, 只有白人男性能参选, 且有财产限制;
+随后逐渐开放到普选. 巴黎公社提前了100年</li>
+<li>"再没有人比无产阶级更拥护普选权了" &#x2013;马克思</li>
+</ul>
+</div>
+</li>
+<li><a id="org09c681a"></a>公社委员会(普选选出)<br />
+<div class="outline-text-6" id="text-5-1-3-2-2">
+<p>
+议行合一的体制
+</p>
+<ul class="org-ul">
+<li>高效</li>
+<li>列宁: 有利于避免议会成为清谈馆</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc19ec64"></a>法官民选<br />
+<div class="outline-text-6" id="text-5-1-3-2-3">
+<p>
+马克思: 我们用法官民选的方式刺破资产阶级所说的司法独立
+</p>
+<ul class="org-ul">
+<li>法官由民众选举产生</li>
+<li>司法过程由百姓监督</li>
+<li>司法不独立, 由人民群众干预司法</li>
+</ul>
+</div>
+</li>
+<li><a id="org2955bf4"></a>公务员的工资&#xa0;&#xa0;&#xa0;<span class="tag"><span class="____">廉价政府</span></span><br />
+<div class="outline-text-6" id="text-5-1-3-2-4">
+<p>
+公务员的工资不能超过普通熟练工人
+</p>
+<ul class="org-ul">
+<li>毛泽东领导了三次带头降工资
+"我们国家虽然实现了社会主义, 但是还有资产阶级法权,</li>
+</ul>
+<p>
+还有八级工资制, 很多地方和旧社会差不多"
+</p>
+</div>
+</li>
+<li><a id="orgb0217e2"></a>废除常备军和警察部队, 代之以工人自己组成的国民自卫军&#xa0;&#xa0;&#xa0;<span class="tag"><span class="____">廉价政府</span></span><br />
+<div class="outline-text-6" id="text-5-1-3-2-5">
+<ul class="org-ul">
+<li>废除阶级统治的物质力量</li>
+</ul>
+</div>
+</li>
+<li><a id="org1c4175e"></a>廉价政府<br />
+<div class="outline-text-6" id="text-5-1-3-2-6">
+<ul class="org-ul">
+<li>上两条实现了真正意义的廉价政府</li>
+<li>以往的国家吸取社会利益, 用于无聊的行政, 用于维护统治阶级的暴力工具</li>
+<li>"以往的国家都是寄生于社会上的赘瘤" &#x2013; 马克思</li>
+</ul>
+</div>
+</li>
+<li><a id="org0b8e9e7"></a>政教分离<br />
+<div class="outline-text-6" id="text-5-1-3-2-7">
+<ul class="org-ul">
+<li>废除阶级统治的精神力量</li>
+<li>国家不支援宗教, 宗教依靠信徒的捐赠存留</li>
+</ul>
+</div>
+</li>
+<li><a id="org63663e2"></a>免费教育 (义务教育)<br /></li>
+<li><a id="org3a2fa88"></a>地方自治 有限中央<br />
+<div class="outline-text-6" id="text-5-1-3-2-9">
+<ul class="org-ul">
+<li>地方掌握大部分权利</li>
+<li>中央掌握少部分重要必要的权利</li>
+</ul>
+</div>
+</li>
+<li><a id="orgce15869"></a>无国家的共同体<br />
+<div class="outline-text-6" id="text-5-1-3-2-10">
+<ul class="org-ul">
+<li>每个人自由发展是一切人自由发展的条件</li>
+<li>自由发展的共同体 Association</li>
+<li>自由人联合体 Verein</li>
+<li>共同体 Gemeinwesen / 公社 Kommune</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: LanderX</p>
+<p class="date">Created: 2020-12-24 周四 17:28</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

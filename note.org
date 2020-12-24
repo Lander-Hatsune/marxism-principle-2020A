@@ -1,4 +1,6 @@
-#+html_head: <link rel="stylesheet" type="text/css" href="/home/landerx/.emacs.d/packages/github.css">
+#+html_head: <link rel="stylesheet" type="text/css" href="D:\CS\src\github.css">
+#+latex_header: \usepackage[UTF8]{ctex}
+#+latex_compiler: xelatex
 
 #+startup: indent
 #+author: LanderX
